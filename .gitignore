@@ -1,0 +1,19 @@
+# Material de referencia del curso (contiene un recibo CFE real): nunca se publica
+reference/
+
+# Entornos y artefactos
+.venv/
+output/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.DS_Store
+~$*.xlsx
