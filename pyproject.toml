@@ -16,6 +16,9 @@ dependencies = [
     "matplotlib>=3.8",
 ]
 
+[project.scripts]
+power-factor = "power_factor.cli:main"
+
 [project.optional-dependencies]
 dev = [
     "pytest>=8",
