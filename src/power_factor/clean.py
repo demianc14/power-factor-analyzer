@@ -154,7 +154,10 @@ def parse_number(value: Any) -> float | None:
             if not _THOUSANDS_RE.match(texto):
                 raise ValueError(f"separador de coma ambiguo en {value!r}")
             texto = texto.replace(",", "")
-        numero = float(texto)
+        try:
+            numero = float(texto)
+        except ValueError:
+            raise ValueError(f"texto no numérico: {value!r}") from None
     if not math.isfinite(numero):
         raise ValueError(f"valor no finito: {value!r}")
     return numero

@@ -78,8 +78,8 @@ def economic_impact(fp: float, subtotal: float, params: CfeTariffParams) -> Econ
     monto = cfe_adjustment_mxn(fp, subtotal, params)
     return EconomicImpact(
         ajuste_pct=pct,
-        penalizacion_mxn=max(monto, 0.0),
-        bonificacion_mxn=max(-monto, 0.0),
+        penalizacion_mxn=max(0.0, monto),
+        bonificacion_mxn=max(0.0, -monto),  # max(0.0, -0.0) -> 0.0, sin "-0"
     )
 
 
