@@ -1,5 +1,7 @@
 # ⚡ Power Factor Analyzer: FP, compensación reactiva y ROI
 
+[![CI](https://github.com/demianc14/power-factor-analyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/demianc14/power-factor-analyzer/actions/workflows/ci.yml)
+
 Pipeline ETL en Python que toma la tabla de recibos CFE de clientes
 industriales y hace cuatro cosas. Diagnostica el factor de potencia (FP).
 Estima el cargo o la bonificación de CFE. Dimensiona el banco de capacitores
@@ -218,7 +220,8 @@ está mal.
 Estado medido localmente (Python 3.14): **176 casos de prueba** (102 funciones
 parametrizadas), **cobertura 100 %** de `src/`, `ruff` y `mypy --strict` sin
 errores. El workflow de GitHub Actions (`.github/workflows/ci.yml`) corre lo
-mismo en Python 3.12, 3.13 y 3.14; localmente solo pude probar 3.14.
+mismo en cada push sobre Python 3.12, 3.13 y 3.14 (el badge de arriba muestra
+el estado actual).
 
 ## Limitaciones honestas
 
