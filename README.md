@@ -227,8 +227,8 @@ mismo en Python 3.12, 3.13 y 3.14; localmente solo pude probar 3.14.
   (GDMTH). En la práctica los bancos suelen instalarse del lado de baja tensión
   (440/480 V): con 480 V en delta la capacitancia por fase es ~250 veces mayor
   que con 13.2 kV en estrella. El documento del curso asume 440 V trifásico
-  sin especificar conexión (preset `440_delta`; elegir delta es decisión mía). El Qc no depende de esto; la
-  capacitancia sí.
+  sin especificar conexión (preset `440_delta`; elegir delta es decisión mía).
+  El Qc no depende de esto; la capacitancia sí.
 - **La fórmula CFE no está verificada contra la tarifa vigente.** Solo se
   contrastó con un recibo, y cuadra únicamente con el FP del histórico (ver
   arriba). La base de cálculo `subtotal` también es un supuesto. En el recibo
